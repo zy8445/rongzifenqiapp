@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../css/box.css" />
+		<link rel="stylesheet" href="../../css/iconfont.css" />
+		<link rel="stylesheet" href="../../css/totalcount.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title"></h1>
+		</header>
+		<div class="mui-content box" style="background: #FFFFFF;">
+			<p class="count">全部账单</p>
+			<div class="main">
+				<ul>
+					<li class="mainLi">
+						<ul>
+							<li>7/24期</li>
+							<li><span class="iconfont icon-jindutiao- teshu"></span></li>
+							<li>还款日期<br>2018.12.05<span class="already">已结清</span></li>
+							<li>¥115.44<span class="iconfont icon-gantanhao jianju"></span></li>
+						</ul>
+					</li>
+					<li class="mainLi">
+						<ul>
+							<li>8/24期</li>
+							<li><span class="iconfont icon-jindutiao- teshu"></span></li>
+							<li>还款日期<br>2018.12.05<span class="already">已结清</span></li>
+							<li>¥115.44<span class="iconfont icon-gantanhao jianju"></span></li>
+						</ul>
+					</li>
+					<li class="mainLi">
+						<ul>
+							<li>9/24期</li>
+							<li><span class="iconfont icon-jindutiao- teshu"></span></li>
+							<li>还款日期<br>2018.12.05<span class="already">已结清</span></li>
+							<li>¥115.44<span class="iconfont icon-gantanhao jianju"></span></li>
+						</ul>
+					</li>
+					<li class="mainLi">
+						<ul>
+							<li>10/24期</li>
+							<li><span class="iconfont icon-jindutiao- teshu"></span></li>
+							<li>还款日期<br>2019.01.05<span class="already">已结清</span></li>
+							<li>¥115.44<span class="iconfont icon-gantanhao jianju"></span></li>
+						</ul>
+					</li>
+					<li class="mainLi">
+						<ul>
+							<li>11/24期</li>
+							<li><span class="iconfont icon-jindutiao- teshu"></span></li>
+							<li>还款日期<br>2019.02.05<span class="already">已结清</span></li>
+							<li>¥115.44<span class="iconfont icon-gantanhao jianju"></span></li>
+						</ul>
+					</li>
+					<li class="mainLi">
+						<ul>
+							<li>12/24期</li>
+							<li><span class="iconfont icon-jindutiao- teshu"></span></li>
+							<li>还款日期<br>2019.03.05</li>
+							<li>¥115.44<span class="iconfont icon-gantanhao jianju"></span></li>
+						</ul>
+					</li>
+					<li class="mainLi">
+						<ul>
+							<li>13/24期</li>
+							<li><span class="iconfont icon-jindutiao- teshu"></span></li>
+							<li>还款日期<br>2019.04.05</li>
+							<li>¥115.44<span class="iconfont icon-gantanhao jianju"></span></li>
+						</ul>
+					</li>
+					<li class="mainLi">
+						<ul>
+							<li>14/24期</li>
+							<li><span class="iconfont icon-jindutiao- teshu"></span></li>
+							<li>还款日期<br>2019.05.05</li>
+							<li>¥115.44<span class="iconfont icon-gantanhao jianju"></span></li>
+						</ul>
+					</li>
+					<li class="mainLi">
+						<ul>
+							<li>15/24期</li>
+							<li><span class="iconfont icon-jindutiao- teshu"></span></li>
+							<li>还款日期<br>2019.06.05</li>
+							<li>¥115.44<span class="iconfont icon-gantanhao jianju"></span></li>
+						</ul>
+					</li>
+					<li class="mainLi">
+						<ul>
+							<li>16/24期</li>
+							<li><span class="iconfont icon-jindutiao- teshu"></span></li>
+							<li>还款日期<br>2019.07.05</li>
+							<li>¥115.44<span class="iconfont icon-gantanhao jianju"></span></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		    <!--内容结束-->
+		</div>
+		<nav class="mui-bar mui-bar-tab" style="background: #FFFFFF;">
+		    <a class="mui-tab-item mui-active" href="tiqianjq.html">
+		       
+		        <p class="mui-tab-label" id="tiqianjq"> <span style="background: #04d27f; border-radius: 20px; padding: 10px 100px; color: white;">提前结账</span></p>
+		       
+		    </a>
+		   
+		</nav>
+		<script src="../../js/mui.min.js"></script>
+		<script type="text/javascript">
+			(function($){
+      		$('.mui-scroll-wrapper').scroll({     			
+      			bounce:true,
+      			indicators:true,
+      		});
+      	})(mui);
+      	var tiqianjq = document.getElementById("tiqianjq");
+      	tiqianjq.addEventListener("tap",function(){
+      		mui.openWindow({
+      			url:"tiqianjq.html",
+      		})
+      	})
+		</script>
+	</body>
+
+</html>

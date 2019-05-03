@@ -1,0 +1,32 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.wodeTop{
+	display: flex;
+	padding: 40px 35px 10px;
+	justify-content: space-between;
+}
+.wodeMain_li>ul{
+	display: flex;
+	justify-content: space-between;
+	margin-left: -6%;
+	color: #666666;
+}
+.wodeMain_li>ul>li:nth-child(1){
+	font-size: 15px;
+}
+.wodeMain_li>ul>li{
+	margin-left: 15%;margin-right: 10%;
+	line-height: 70px;
+	font-family: 微软雅黑;
+}
+.yirenz{
+	border: 1px solid orange;
+	border-radius: 20px;
+	margin-left: 20px;
+	font-size: 12px;
+	padding: 0px 5px;
+	color: orange;
+}

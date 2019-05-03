@@ -1,0 +1,28 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.mykefu{
+	font-size: 20px;
+	padding: 20px 0;
+	/*margin-left: 5%;*/
+}
+.mykefu_button{
+	/*width: 90%;*/
+	margin: 0 auto;
+}
+.mykefu_button>ul{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.mykefu_button>ul>li{
+	width: 50%;
+	background: pink;
+	
+}
+.mykefu_buttonLi>ul{
+	display: flex;
+	justify-content: space-around;
+}

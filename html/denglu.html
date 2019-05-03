@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<style>
+			h5,
+			p,
+			ol,
+			li {
+				color: #666;
+				font-size: 14px;
+			}
+			h5 {
+				font-weight: bold;
+			}
+			p,
+			ol {
+				padding: 5px auto;
+				margin-bottom: 20px;
+			}
+			p,
+			li {
+				color: #999;
+			}
+			img {
+				width: 90%;
+				border: solid 1px #ddd;
+				border-radius: 5px;
+				box-shadow: 0px 0px 5px 1px #aaa;
+				margin: 5px auto;
+			}
+			
+			.mui-plus header.mui-bar{
+				display: none;
+			}
+			.mui-plus .mui-bar-nav~.mui-content{
+				padding: 0;
+			}
+			
+			/*hm开头的表示仅为 Hello MUI示例定义*/
+			.hm-description{
+				margin: .5em 0;
+			}
+			
+			.hm-description>li {
+				font-size: 14px;
+				color: #8f8f94;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">融易分期登录</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-content-padded">
+				<h5>登录注意点</h5>
+				<p>
+					输入正确的账号及密码
+				</p>
+				<h5>登录成功之后注意密码被泄露</h5>
+				<ol>
+					<li>选择登录</li>
+					<li>网址 <a _src='https://github.com/dcloudio/mui/tree/master/examples/login'></a> 。
+					</li>
+				</ol>
+				<h5>演示截图</h5>
+				<p style="text-align: center;">
+					<img src="../img/login-1.png" />
+				</p>
+			</div>
+		</div>
+		
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			(function(mui, window, document, undefined) {
+				mui.init();
+				var qsa = function() {
+					return [].slice.call(document.querySelectorAll.apply(document, arguments));
+				};
+				qsa("[_src]").forEach(function(item) {
+					item.addEventListener('tap', function() {
+						var url = this.getAttribute('_src');
+						if (url) {
+							plus.runtime.openURL(url);
+						};
+					}, false);
+				});
+			})(mui, window, document, undefined);
+		</script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

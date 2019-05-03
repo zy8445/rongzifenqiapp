@@ -1,0 +1,27 @@
+{
+	"index.html": {
+		"resources": [
+			"html/shouye.html"
+		],
+		"refer": [
+			"html/shouye.html",
+			"html/wode.html",
+			"html/huankuan.html"
+		]
+	},
+	"html/shouye.html": {
+		"refer": [
+			"html/shouyezi/feiqi.html"
+		]
+	},
+	"html/huankuan.html": {
+		"refer": [
+			"html/kuankuanzi/totalcount.html"
+		]
+	},
+	"html/kuankuanzi/totalcount.html": {
+		"refer": [
+			"html/kuankuanzi/tiqianjq.html"
+		]
+	}
+}

@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<link rel="stylesheet" href="../css/box.css" />
+		<link rel="stylesheet" href="../css/shouye.css" />
+		<link rel="stylesheet" href="../css/swiper.min.css" />
+		<link rel="stylesheet" href="../css/wode.css" />
+		<link rel="stylesheet" href="../css/huankuan.css" />
+	</head>
+
+	<body>
+		<!--大盒子-->
+		<div class="mui-content box" style="background: #FFFFFF;" id="refreshContainer">	
+			<!--融易分期-->
+			<div class="easyfQ">
+				<p>融易分期</p>
+			</div>
+			<!--提高警惕-->
+			<div class="tigao">
+				<img src="../img/iocn.png" style="width: 30px; margin-left: 10%; margin-top: 10px;"/>
+				<span>提高警惕,警方诈骗!</span>
+			</div>
+			<!--分期-->
+			<div class="fenqi">
+				<ul>
+					<li class="fenqi_word">
+						<div>
+							<dl>
+								<dt id="peixunfq">培训分期</dt>
+								<dd>先就业后付款</dd>
+								<dd>流程简单,极速审批</dd>
+							</dl>
+						</div>
+						<div>
+							<p><img src="../img/zhou.jpg"></p>
+						</div>
+					</li>
+					<li class="fenqi_word">
+						<div>
+							<dl>
+								<dt>培训分期</dt>
+								<dd>先就业后付款</dd>
+								<dd>流程简单,极速审批</dd>
+							</dl>
+						</div>
+						<div>
+							<p><img src="../img/ka.jpg"></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--大盒子结束-->
+		<!--js部分-->
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+//			弹性窗口
+//		(function($){
+//    		$('.mui-scroll-wrapper').scroll({     			
+//			bounce:true,
+//			indicators:true,
+//	      		});
+//	      	})(mui);
+//	      	点击跳转
+	      	var peixunfq = document.getElementById("peixunfq");
+	      	console.log(peixunfq);
+	      	peixunfq.addEventListener("tap",function(){
+	      		mui.openWindow({
+	      			url:"shouyezi/feiqi.html",
+	      		})
+	      	})
+//	      	刷新
+			mui.init({
+				pullRefresh:{
+				container:"#refreshContainer",
+				down:{
+					contentdown:"下拉可以刷新",
+					contentover:"释放可以刷新",
+					contentrefresh:"正在刷新",
+			     	contentrefresh: '刷新成功',
+			      	callback :pulldownRefresh 
+					},
+				}
+			})
+				function pulldownRefresh() {
+       			 setTimeout(function () {
+	            mui('#refreshContainer').pullRefresh().endPulldownToRefresh(); //refresh completed
+			        }, 1500);
+			    }
+									
+		</script>
+		
+	</body>
+
+</html>

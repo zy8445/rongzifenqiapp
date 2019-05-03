@@ -1,0 +1,77 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.fenqizi{
+	font-size: 20px;
+	color: #666666;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 8%;
+}
+.jine{
+	width: 85%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	background: #05d47f;
+	padding: 30px;
+}
+.jine>ul>li:nth-child(1){
+	font-size:13px;
+}
+.jine li{
+	line-height: 30px;
+	color: white;
+}
+.jine li:nth-child(2){
+	font-size: 25px;
+	text-align: center;
+}
+/*办理流程*/
+.banli{
+	padding: 10px;
+	font-size: 18px;
+	color: #666666;
+	margin-top: 25px;
+	margin-left: 5%;
+}
+.bianjie ul{
+	width: 90%;
+	margin: 0 auto;
+	margin-left: 5%;
+	display: flex;
+	justify-content: space-around;
+}
+.bianjie ul>li{
+	text-align: center;
+}
+.bianjie .iconfont{
+	color: orange;
+	font-size: 20px;
+}
+.bianjie li p:nth-child(2){
+	font-size: 12px;
+}
+.tubiao{
+	margin-top: 6%;
+	/*margin-left: -8%;*/
+}
+.bianjie img{
+	width: 50px;
+	margin-bottom: -15px;
+}
+.fenqiziword{
+	width: 90%;
+	font-size: 12px;
+	margin-left: 8%;
+}
+.button{
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 20px;
+	background: #05d47f;
+	text-align: center;
+	color: white;
+}
