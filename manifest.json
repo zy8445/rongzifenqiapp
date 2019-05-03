@@ -141,7 +141,9 @@
 			"html/shouye.html": {
 				"resources": [],
 				"refer": [
-					"html/shouyezi/feiqi.html"
+					"html/shouyezi/feiqi.html",
+					"html/kuankuanzi/totalcount.html",
+					"html/wodezi/helpyukefu.html"
 				],
 				"priority": 0
 			},
@@ -156,6 +158,15 @@
 				"resources": [],
 				"refer": [
 					"html/kuankuanzi/tiqianjq.html"
+				],
+				"priority": 0
+			},
+			"html/wode.html": {
+				"resources": [],
+				"refer": [
+					"html/wodezi/helpyukefu.html",
+					"html/shouyezi/feiqi.html",
+					"html/kuankuanzi/totalcount.html"
 				],
 				"priority": 0
 			}

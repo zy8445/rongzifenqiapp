@@ -11,7 +11,9 @@
 	},
 	"html/shouye.html": {
 		"refer": [
-			"html/shouyezi/feiqi.html"
+			"html/shouyezi/feiqi.html",
+			"html/kuankuanzi/totalcount.html",
+			"html/wodezi/helpyukefu.html"
 		]
 	},
 	"html/huankuan.html": {
@@ -22,6 +24,13 @@
 	"html/kuankuanzi/totalcount.html": {
 		"refer": [
 			"html/kuankuanzi/tiqianjq.html"
+		]
+	},
+	"html/wode.html": {
+		"refer": [
+			"html/wodezi/helpyukefu.html",
+			"html/shouyezi/feiqi.html",
+			"html/kuankuanzi/totalcount.html"
 		]
 	}
 }

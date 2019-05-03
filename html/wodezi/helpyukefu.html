@@ -12,32 +12,274 @@
 	</head>
 
 	<body>
-		<header class="mui-bar mui-bar-nav" style="background: #FFFFFF;">
-		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-		    <h1 class="mui-title">帮助与客服</h1>
-		</header>
-		<div class="mui-content box" style="background: #FFFFFF;">
-		    <p class="mykefu">我的客服</p>
-		    <div class="mykefu_button">
-		    	<ul>
-		    		<li class="mykefu_buttonLi">
-		    			<ul>
-		    				<li><span class="iconfont icon-icon-test2"></span></li>
-		    				<li>
-		    					<p>提前结清</p>
-		    					<p>如何提前结清></p>
-		    				</li>
-		    			</ul>
-		    		</li>
-		    		<li></li>
-		    		<li></li>
-		    		<li></li>
-		    	</ul>
-		    </div>
+		<!--侧滑菜单容器-->
+		<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+			<!--菜单部分-->
+			<aside id="offCanvasSide" class="mui-off-canvas-right" style="background: white;">
+				<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<div class="content">
+							<div class="mui-content box" style="background: #FFFFFF;">
+							    <p class="mykefu">我的客服</p>
+							  	   	<div class="mykefu_button">
+							    	<ul style="width: 80%;  margin-left: -1%;">
+							    		<li class="mykefu_buttonLi">
+							    			<ul>
+							    				<li><img src="../../img/01.png" style="width: 54px;"></li>
+							    				<li style="margin-top: 14px;">
+							    					<p style="font-size: 15px; color: black;">提前结清</p>
+							    					<p style="margin-top: -10px; font-size: 10px;">如何提前结清</p>
+							    				</li>
+							    			</ul>
+							    		</li>
+							    		<li class="mykefu_buttonLi">
+							    			<ul>
+							    				<li><img src="../../img/03.png" style="width: 44px; margin-top: 8px;"></li>
+							    				<li style="margin-top: 14px;">
+							    					<p style="font-size: 15px; color: black;">正常还款</p>
+							    					<p style="margin-top: -10px; font-size: 11px;">每期应还多少</p>
+							    				</li>
+							    			</ul>
+							    		</li>
+							    		<li class="mykefu_buttonLi">
+							    			<ul>
+							    				<li><img src="../../img/02.png" style="width: 40px; margin-top: 8px;"></li>
+							    				<li style="margin-top: 12px;">
+							    					<p style="font-size: 15px; color: black;">逾期</p>
+							    					<p style="margin-top: -10px; font-size: 11px;">逾期费用多少?</p>
+							    				</li>
+							    			</ul>
+							    		</li>
+							    		<li class="mykefu_buttonLi">
+							    			<ul>
+							    				<li><img src="../../img/04.png" style="width: 44px; margin-top: 8px;"></li>
+							    				<li style="margin-top: 12px; color: black;">退课</p>
+							    					<p style="margin-top: -10px; font-size: 11px;">如何办理退课</p>
+							    				</li>
+							    			</ul>
+							    		</li>
+							    	</ul>
+							    </div>
+							</div>
+							<p style="margin: 10px 15px;">
+								<button id="offCanvasHide" type="button" class="mui-btn mui-btn-danger mui-btn-block" style="padding: 5px 20px;">点击关闭回答</button>
+							</p>
+
+						</div>
+						<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted" style="background: white; color:#666666; font-family: 微软雅黑; font-size: 13px;">
+							<li class="mui-table-view-cell"> 
+								<a class="mui-navigate-right">
+									方式1:可以登录容易app	方式1:可以登录容易app	方式1:可以登录容易app
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									方式2:你好 可在我的银行卡可在我的银行卡
+									
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									方式3:你好 建议你查询可在我的银行卡
+									
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									方式4:到银行去取消可在我的银行卡
+									
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									方式5:拒绝就不管了,这个我们也没有办法可在我的银行卡
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+								方式6:更多问题请前来咨询我们可在我的银行卡
+									
+								</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</aside>
+			<div class="mui-inner-wrap">
+				<header class="mui-bar mui-bar-nav">
+					<a class="mui-action-back mui-icon mui-icon-back mui-pull-left"></a>
+					<a id="offCanvasBtn" href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-right"></a>
+					<h1 class="mui-title">帮助与客服</h1>
+				</header>
+				<!--主页部分-->
+				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<div class="mui-content-padded">
+							<!--主页上面-->
+							<div class="mui-content box" style="background: #FFFFFF;">
+							    <p class="mykefu">我的客服</p>
+							   	<div class="mykefu_button">
+							    	<ul style="justify-content: space-around;">
+							    		<li class="mykefu_buttonLi">
+							    			<ul>
+							    				<li><img src="../../img/01.png" style="width: 64px;"></li>
+							    				<li style="margin-top: 14px;">
+							    					<p style="font-size: 15px; color: black;">提前结清</p>
+							    					<p style="margin-top: -10px; font-size: 11px;">如何提前结清></p>
+							    				</li>
+							    			</ul>
+							    		</li>
+							    		<li class="mykefu_buttonLi">
+							    			<ul>
+							    				<li><img src="../../img/03.png" style="width: 54px;"></li>
+							    				<li style="margin-top: 14px;">
+							    					<p style="font-size: 15px; color: black;">正常还款</p>
+							    					<p style="margin-top: -10px; font-size: 11px;">每期应还多少></p>
+							    				</li>
+							    			</ul>
+							    		</li>
+							    		<li class="mykefu_buttonLi">
+							    			<ul>
+							    				<li><img src="../../img/02.png" style="width: 54px;"></li>
+							    				<li style="margin-top: 12px;">
+							    					<p style="font-size: 15px; color: black;">逾期</p>
+							    					<p style="margin-top: -10px; font-size: 11px;">逾期费用多少?></p>
+							    				</li>
+							    			</ul>
+							    		</li>
+							    		<li class="mykefu_buttonLi">
+							    			<ul>
+							    				<li><img src="../../img/04.png" style="width: 54px;"></li>
+							    				<li style="margin-top: 12px; color: black;">退课</p>
+							    					<p style="margin-top: -10px; font-size: 11px;">如何办理退课></p>
+							    				</li>
+							    			</ul>
+							    		</li>
+							    	</ul>
+							    </div>
+							</div>
+							<p style="padding: 5px 20px;margin-bottom: 5px;">
+								<button id="offCanvasShow" type="button" class="mui-btn mui-btn-primary mui-btn-block" style="padding: 5px;">
+									点我解决一下问题
+								</button>
+							</p>
+							<p style="width: 90%;">其他问问题</p>
+
+						</div>
+
+						<form class="mui-input-group" style="margin-bottom: 15px; font-family: 微软雅黑; color: #666666; font-size: 13px;">
+							<div class="mui-input-row mui-radio">
+								<label><span class="iconfont icon-shimingrenzheng1" style="color: green"></span>怎样更换登录APP的手机号?</label>
+								<input name="style" type="radio" checked="" value="main-move">
+							</div>
+							<div class="mui-input-row mui-radio">
+								<label><span class="iconfont icon-shimingrenzheng1" style="color: green"></span>怎样更换还款银行卡?</label>
+								<input name="style" type="radio" value="menu-move">
+							</div>
+							<div class="mui-input-row mui-radio mui-hidden" id="move-togger">
+								<label><span class="iconfont icon-shimingrenzheng1" style="color: green"></span>支持哪些银行卡?/label>
+								<input name="style" type="radio" value="all-move">
+							</div>
+							<div class="mui-input-row mui-radio">
+								<label><span class="iconfont icon-shimingrenzheng1" style="color: green"></span>怎样注销账户?</label>
+								<input name="style" type="radio" value="main-move-scalable">
+							</div>
+							<div class="mui-input-row mui-radio">
+								<label><span class="iconfont icon-shimingrenzheng1" style="color: green"></span>培训分期贷款如何取消?</label>
+								<input name="style" type="radio" value="main-move-scalable">
+							</div>
+							<div class="mui-input-row mui-radio">
+								<label><span class="iconfont icon-shimingrenzheng1" style="color: green"></span>我的申请为什么被拒绝了?</label>
+								<input name="style" type="radio" value="main-move-scalable">
+							</div>
+						</form>
+
+					</div>
+				</div>
+				<!-- off-canvas backdrop -->
+				<div class="mui-off-canvas-backdrop"></div>
+			</div>
 		</div>
 		<script src="../../js/mui.min.js"></script>
 		<script type="text/javascript">
-			mui.init()
+		mui.init({
+				swipeBack: false,
+			});
+			 //侧滑容器父节点
+			var offCanvasWrapper = mui('#offCanvasWrapper');
+			 //主界面容器
+			var offCanvasInner = offCanvasWrapper[0].querySelector('.mui-inner-wrap');
+			 //菜单容器
+			var offCanvasSide = document.getElementById("offCanvasSide");
+			 //Android暂不支持整体移动动画
+			if (!mui.os.android) {
+				document.getElementById("move-togger").classList.remove('mui-hidden');
+				var spans = document.querySelectorAll('.android-only');
+				for (var i = 0, len = spans.length; i < len; i++) {
+					spans[i].style.display = "none";
+				}
+			}
+			 //移动效果是否为整体移动
+			var moveTogether = false;
+			 //侧滑容器的class列表，增加.mui-slide-in即可实现菜单移动、主界面不动的效果；
+			var classList = offCanvasWrapper[0].classList;
+			 //变换侧滑动画移动效果；
+			mui('.mui-input-group').on('change', 'input', function() {
+				if (this.checked) {
+					offCanvasSide.classList.remove('mui-transitioning');
+					offCanvasSide.setAttribute('style', '');
+					classList.remove('mui-slide-in');
+					classList.remove('mui-scalable');
+					switch (this.value) {
+						case 'main-move':
+							if (moveTogether) {
+								//仅主内容滑动时，侧滑菜单在off-canvas-wrap内，和主界面并列
+								offCanvasWrapper[0].insertBefore(offCanvasSide, offCanvasWrapper[0].firstElementChild);
+								moveTogether = false;
+							}
+							break;
+						case 'main-move-scalable':
+							if (moveTogether) {
+								//仅主内容滑动时，侧滑菜单在off-canvas-wrap内，和主界面并列
+								offCanvasWrapper[0].insertBefore(offCanvasSide, offCanvasWrapper[0].firstElementChild);
+							}
+							classList.add('mui-scalable');
+							break;
+						case 'menu-move':
+							classList.add('mui-slide-in');
+							break;
+						case 'all-move':
+							moveTogether = true;
+							//整体滑动时，侧滑菜单在inner-wrap内
+							offCanvasInner.insertBefore(offCanvasSide, offCanvasInner.firstElementChild);
+							break;
+					}
+					offCanvasWrapper.offCanvas().refresh();
+				}
+			});
+			document.getElementById('offCanvasShow').addEventListener('tap', function() {
+				offCanvasWrapper.offCanvas('show');
+			});
+			document.getElementById('offCanvasHide').addEventListener('tap', function() {
+				offCanvasWrapper.offCanvas('close');
+			});
+			 //主界面和侧滑菜单界面均支持区域滚动；
+			mui('#offCanvasSideScroll').scroll();
+			mui('#offCanvasContentScroll').scroll();
+			 //实现ios平台的侧滑关闭页面；
+			if (mui.os.plus && mui.os.ios) {
+				offCanvasWrapper[0].addEventListener('shown', function(e) { //菜单显示完成事件
+					plus.webview.currentWebview().setStyle({
+						'popGesture': 'none'
+					});
+				});
+				offCanvasWrapper[0].addEventListener('hidden', function(e) { //菜单关闭完成事件
+					plus.webview.currentWebview().setStyle({
+						'popGesture': 'close'
+					});
+				});
+			}
 		</script>
 	</body>
 
